@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-CSV_FILE = my_final_playlist_no_api.csv
+CSV_FILE = "my_final_playlist_no_api.csv"
 
 def load_songs_from_csv(playlist_name=None):
     df = pd.read_csv(CSV_FILE)
